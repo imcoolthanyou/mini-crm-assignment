@@ -61,14 +61,13 @@ class AddEditCustomerActivity : AppCompatActivity() {
             }
         }
 
-        // *** THIS BLOCK IS UPDATED FOR THE NEW USER OBJECT ***
         lifecycleScope.launch {
             viewModel.randomUser.collect { randomUser ->
                 randomUser?.let {
                     binding.nameEditText.setText(it.name)
                     binding.phoneEditText.setText(it.phone)
                     binding.emailEditText.setText(it.email)
-                    binding.companyEditText.setText(it.company.name) // Use it.company.name
+                    binding.companyEditText.setText(it.company.name) 
                 }
             }
         }
