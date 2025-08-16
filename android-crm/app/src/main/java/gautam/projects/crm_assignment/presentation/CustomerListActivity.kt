@@ -189,7 +189,7 @@ class CustomerListActivity : AppCompatActivity() {
 
        
         binding.addCustomerFab.setOnLongClickListener {
-            val intent = Intent(this, AddEditOrderActivity::class.java) // You'll need to create this
+            val intent = Intent(this, AddEditOrderActivity::class.java) 
             startActivityForResult(intent, ORDER_REQUEST)
             true
         }
