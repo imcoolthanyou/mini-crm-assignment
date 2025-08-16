@@ -12,7 +12,7 @@ import gautam.projects.crm_assignment.data.local.room.Customer
 
 
 
-// 1. ADD A SECOND FUNCTION FOR LONG CLICKS
+
 class CustomerAdapter(
     private val onItemClicked: (Customer) -> Unit,
     private val onItemLongClicked: (Customer) -> Unit
@@ -33,7 +33,6 @@ class CustomerAdapter(
             itemView.setOnClickListener {
                 onItemClicked(customer)
             }
-            // 2. ADD THE LONG CLICK LISTENER
             itemView.setOnLongClickListener {
                 onItemLongClicked(customer)
                 true // Return true to indicate we've handled the event
@@ -49,7 +48,7 @@ class CustomerAdapter(
 
     override fun onBindViewHolder(holder: CustomerViewHolder, position: Int) {
         val customer = getItem(position)
-        // 3. PASS THE LONG CLICK FUNCTION TO THE BIND METHOD
+        
         holder.bind(customer, onItemClicked, onItemLongClicked)
     }
 
