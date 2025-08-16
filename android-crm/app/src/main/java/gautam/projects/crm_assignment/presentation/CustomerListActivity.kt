@@ -180,21 +180,14 @@ class CustomerListActivity : AppCompatActivity() {
             triggerSync()
         }
 
-/* <<<<<<<<<<<<<<  ✨ Windsurf Command ⭐ >>>>>>>>>>>>>>>> */
-    /**
-     * Called when the activity is no longer visible.
-     *
-     * In this case, it is used to unregister the network callback.
-     */
-/* <<<<<<<<<<  1b816431-591e-4e80-8eb3-22bd24e586a0  >>>>>>>>>>> */
+
         // FAB for adding customers
         binding.addCustomerFab.setOnClickListener {
             val intent = Intent(this, AddEditCustomerActivity::class.java)
             startActivityForResult(intent, ADD_EDIT_REQUEST)
         }
 
-        // Optional: Add orders management button
-        // You can add this to your layout or use long press on FAB
+       
         binding.addCustomerFab.setOnLongClickListener {
             val intent = Intent(this, AddEditOrderActivity::class.java) // You'll need to create this
             startActivityForResult(intent, ORDER_REQUEST)
