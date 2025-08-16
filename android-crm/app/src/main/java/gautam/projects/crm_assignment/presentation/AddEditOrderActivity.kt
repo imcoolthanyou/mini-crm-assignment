@@ -14,7 +14,7 @@ class AddEditOrderActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAddEditOrderBinding
     private var customerId: Int = -1
 
-    // The missing piece is added here
+
     companion object {
         const val EXTRA_CUSTOMER_ID = "customer_id"
     }
