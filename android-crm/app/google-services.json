@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1025462695450",
+    "project_id": "postofficeapp-66b4a",
+    "storage_bucket": "postofficeapp-66b4a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025462695450:android:c7f22aa381229c7fb243a3",
+        "android_client_info": {
+          "package_name": "gautam.projects.crm_assignment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpGRkiObBSjf_8CihZU4W99oG4ldrQ2GM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
